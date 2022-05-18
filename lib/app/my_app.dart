@@ -12,10 +12,18 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-
+        appBar: AppBar(
+          title: const Text(
+            'Hamada',
+            style: TextStyle(
+              fontFamily: 'Montserrat',
+              fontWeight: FontWeight.bold
+            ),
+          ),
+        ),
       ),
     );
   }
